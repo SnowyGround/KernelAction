@@ -475,13 +475,13 @@ jobs:
         with:
           to-who: '${{ secrets.TELEGRAM_API_TO_WHO }}'
           message: |
-            #CI #MoonWake
+            #Nightly #MoonWake
 
-            **Build Infomation:**
+            ⚙️ **Build Infomation:**
             - *Config file*: ${{ github.event.inputs.config_file }}
             - *Build type*: ${{ github.event.inputs.config_type }}
 
-            **Workflow Infomations:**
+            📊 **Workflow Infomations:**
             - *Status:* ${{ github.action_status }}
             - *Attempt:* ${{ github.run_attempt }}
             - *Run Number:* #${{ github.run_number }}
@@ -491,7 +491,7 @@ jobs:
             - *Workflow SHA:* ${{ github.sha }}
             - *Workflow Link:* [click here](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
 
-            Notes:
+            📄 **Notes:**
             - You're RESPONSIBLE for EVERY DAMAGE, if you flash this ${{ github.event.inputs.config_type }} build.
             - [Step to flash MoonWake in AOSP](https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby/wiki/Flash-MoonWake-on-AOSP)
             - [Step to flash MoonWake in HyperOS/MIUI](https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby/wiki/Flash-MoonWake-on-MIUI-HyperOS)
