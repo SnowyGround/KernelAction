@@ -468,7 +468,10 @@ jobs:
             )
           done
           echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
-          echo "KERNEL_BUILD_LIST=$(ls -1 packed_kernels | nl -w1 -s '' | sed 's/^/\.\/packed_kernels\//')" >> $GITHUB_ENV
+          echo "KERNEL_BUILD_LIST=$(printf "%s " ./packed_kernels/*)" >> $GITHUB_ENV
+
+      - name: Test list
+        run: echo ${{ env.KERNEL_BUILD_LIST }}
 
       - name: Telegram File Uploader
         uses: xz-dev/TelegramFileUploader@v1.1.1
