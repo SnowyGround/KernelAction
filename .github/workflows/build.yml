@@ -497,7 +497,6 @@ jobs:
             - **Run Number:** #${{ github.run_number }}
             - **Run ID:** ${{ github.run_id }}
             - **Actor:** ${{ github.actor }}
-            - **Original Actor:** ${{ github.github.triggering_actor }}
             - **Workflow SHA:** ${{ github.sha }}
             - **Workflow Link:** [click here](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
 
