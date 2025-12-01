@@ -453,14 +453,14 @@ jobs:
           path: downloaded_kernels
 
 
-      - name: List current dir
-        run: tree -a .
+      # - name: List current dir
+      #   run: tree -a .
 
       - name: Pack kernels
         run: |
           mkdir -p packed_kernels
 
-          for dir in downloaded_kernels/MoonWake-*; do
+          for dir in downloaded_kernels/*; do
             [ -d "$dir" ] || continue
 
             folder_name=$(basename "$dir")
@@ -477,8 +477,8 @@ jobs:
           echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
           echo "KERNEL_BUILD_LIST=$(printf '%s ' ./packed_kernels/*)" >> $GITHUB_ENV
 
-      - name: List current dir
-        run: tree -a .
+      # - name: List current dir
+      #   run: tree -a .
 
       - name: Telegram File Uploader
         uses: xz-dev/TelegramFileUploader@v1.1.1
