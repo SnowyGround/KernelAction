@@ -431,11 +431,17 @@ jobs:
             cat "$base" dtb > "$base-dtb"
             rm -f "$base" dtb
           fi
+
+      - name: "Export version and hash"
+        run: |
+          echo "KERNEL_VERSION_LATEST=$(git ls-remote --tags origin | awk -F'/' '{print $3}' | sort -V | tail -n 1)" >> $GITHUB_ENV
+          echo "KERNEL_VERSION_HASH=$(git rev-parse --short=7 HEAD)" >> $GITHUB_ENV
+
       - name: "Upload AnyKernel3 zip"
         uses: actions/upload-artifact@v4
         if: ${{ env.useAnykernel == 'true' }}
         with:
-          name: "${{ env.KERNEL_NAME }}-${{ env.KERNEL_DEVICE_VENDOR }}-${{ env.KERNEL_DEVICE }}-${{ env.builddate }}-${{ github.run_number }}"
+          name: "${{ env.KERNEL_NAME }}-${{ env.KERNEL_VERSION_LATEST }}-${{ github.run_number }}-${{ env.KERNEL_VERSION_HASH }}-${{ env.builddate }}-${{ github.event.inputs.config_type }}"
           path: ./AnyKernel3
 
   publish:
@@ -451,10 +457,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: downloaded_kernels
-
-
-      # - name: List current dir
-      #   run: tree -a .
 
       - name: Pack kernels
         run: |
@@ -476,9 +478,6 @@ jobs:
           done
           echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
           echo "KERNEL_BUILD_LIST=$(printf '%s ' "./packed_kernels/"* | sed 's/ $//')" >> $GITHUB_ENV
-
-      # - name: List current dir
-      #   run: tree -a .
 
       - name: Telegram File Uploader
         uses: xz-dev/TelegramFileUploader@v1.1.1
