@@ -492,7 +492,6 @@ jobs:
             - **Build type:** `${{ github.event.inputs.config_type }}`
 
             📊 **Workflow Infomations:**
-            - **Status:** `${{ github.action_status }}`
             - **Attempt:** `${{ github.run_attempt }}`
             - **Run Number:** `#${{ github.run_number }}`
             - **Run ID:** `${{ github.run_id }}`
