@@ -26,8 +26,8 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/DR-KernelArchive/aosp-clang",
-        "branch": "r383902",
+        "repo": "https://github.com/DPR-MoonWake/clang-r383902",
+        "branch": "aosp",
         "name": "clang-AOSP",
         "binPath": ["/bin"]
       }
@@ -92,8 +92,8 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/DR-KernelArchive/aosp-clang",
-        "branch": "r383902",
+        "repo": "https://github.com/DPR-MoonWake/clang-r383902",
+        "branch": "aosp",
         "name": "clang-AOSP",
         "binPath": ["/bin"]
       }
@@ -158,8 +158,8 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/DR-KernelArchive/aosp-clang",
-        "branch": "r383902",
+        "repo": "https://github.com/DPR-MoonWake/clang-r383902",
+        "branch": "aosp",
         "name": "clang-AOSP",
         "binPath": ["/bin"]
       }
