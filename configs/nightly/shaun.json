@@ -6,7 +6,7 @@
       "name": "ShaunTheSheep-Aeron",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/kernelsu.config vendor/susfs.config",
-      "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
+      "repo": "https://github.com/DPR-MoonWake/moonwake_kernel_xiaomi_ruby",
       "branch": "MoonX"
     },
     "output_image": "Image.gz-dtb",
@@ -61,7 +61,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/DR-KernelArchive/AnyKernel3",
+      "repo": "https://github.com/DPR-MoonWake/AnyKernel3",
       "branch": "shaun"
     }
   },
@@ -72,7 +72,7 @@
       "name": "ShaunTheSheep-Aeron-Suki-Banana",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/kernelsu.config vendor/susfs.config",
-      "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
+      "repo": "https://github.com/DPR-MoonWake/moonwake_kernel_xiaomi_ruby",
       "branch": "MoonX"
     },
     "output_image": "Image.gz-dtb",
@@ -127,7 +127,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/DR-KernelArchive/AnyKernel3",
+      "repo": "https://github.com/DPR-MoonWake/AnyKernel3",
       "branch": "shaun"
     }
   },
@@ -138,7 +138,7 @@
       "name": "ShaunTheSheep-Absolute-Aeron",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/lz4kd.config vendor/bbr.config vendor/noop.config vendor/lru.config vendor/kernelsu.config vendor/susfs.config vendor/kernelpatch.config",
-      "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
+      "repo": "https://github.com/DPR-MoonWake/moonwake_kernel_xiaomi_ruby",
       "branch": "MoonX"
     },
     "output_image": "Image.gz-dtb",
@@ -193,7 +193,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/DR-KernelArchive/AnyKernel3",
+      "repo": "https://github.com/DPR-MoonWake/AnyKernel3",
       "branch": "shaun"
     }
   }
