@@ -62,7 +62,7 @@
       "use": true,
       "release": true,
       "repo": "https://github.com/DPR-MoonWake/AnyKernel3",
-      "branch": "ruby_dev"
+      "branch": "hyper"
     }
   },
   {
@@ -128,7 +128,7 @@
       "use": true,
       "release": true,
       "repo": "https://github.com/DPR-MoonWake/AnyKernel3",
-      "branch": "ruby_dev"
+      "branch": "hyper"
     }
   }
 ]
