@@ -3,7 +3,7 @@
     "kernelSource": {
       "device": "ruby",
       "vendor": "xiaomi",
-      "name": "Shaun-The-Sheep",
+      "name": "Aeron-Phoneix",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/kernelsu.config vendor/susfs.config",
       "repo": "https://github.com/DPR-MoonWake/aeron_kernel_xiaomi_ruby",
@@ -62,7 +62,7 @@
       "use": true,
       "release": true,
       "repo": "https://github.com/DPR-MoonWake/AnyKernel3",
-      "branch": "shaun"
+      "branch": "aeron"
     }
   }
 ]
