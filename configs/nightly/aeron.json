@@ -3,14 +3,14 @@
     "kernelSource": {
       "device": "ruby",
       "vendor": "xiaomi",
-      "name": "Aeron",
+      "name": "Shaun-The-Sheep",
       "defconfig": "ruby_defconfig",
-      "extraConfig": "vendor/lz4kd.config vendor/bbr.config vendor/noop.config vendor/kernelsu.config vendor/susfs.config",
-      "repo": "https://github.com/DPR-MoonWake/moonwake_kernel_xiaomi_ruby",
-      "branch": "experimental_90hz"
+      "extraConfig": "vendor/kernelsu.config vendor/susfs.config",
+      "repo": "https://github.com/DPR-MoonWake/aeron_kernel_xiaomi_ruby",
+      "branch": "ksu_susfs"
     },
     "output_image": "Image.gz-dtb",
-    "additional_script_link": "https://github.com/DPR-MoonWake/KernelAction/raw/main/scripts/aeron.sh",
+    "additional_script_link": "disabled",
     "additional_post_script_link": "disabled",
     "kp": {
       "use": false,
