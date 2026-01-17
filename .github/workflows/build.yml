@@ -1,4 +1,4 @@
-name: "Build MoonWake Kernel"
+name: "Build HyperMoonn Kernel"
 
 env:
   OUT_DIR: "${{ github.workspace }}/out"
@@ -10,7 +10,7 @@ on:
         description: "Choose a config type"
         required: true
         type: choice
-        default: "nightly"
+        default: "release"
         options:
           - release
           - nightly
@@ -31,7 +31,7 @@ on:
         description: "Whatever send to telegram ci channel or not"
         required: true
         type: choice
-        default: "true"
+        default: "false"
         options:
           - "true"
           - "false"
