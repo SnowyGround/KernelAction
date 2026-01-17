@@ -1,4 +1,4 @@
-name: "Build HyperMoonn Kernel"
+name: "Build HyperMoon Kernel"
 
 env:
   OUT_DIR: "${{ github.workspace }}/out"
