@@ -6,7 +6,7 @@
       "name": "HyperMoon-Vanilla",
       "defconfig": "ruby_defconfig",
       "extraConfig": "",
-      "repo": "https://github.com/DPR-MoonWake/hypermoon_kernel_xiaomi_ruby",
+      "repo": "https://github.com/SnowyGround/hypermoon_kernel_xiaomi_ruby",
       "branch": "main"
     },
     "output_image": "Image.gz",
@@ -72,7 +72,7 @@
       "name": "HyperMoon-KSU",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/kernelsu.config vendor/susfs.config",
-      "repo": "https://github.com/DPR-MoonWake/hypermoon_kernel_xiaomi_ruby",
+      "repo": "https://github.com/SnowyGround/hypermoon_kernel_xiaomi_ruby",
       "branch": "main"
     },
     "output_image": "Image.gz",
